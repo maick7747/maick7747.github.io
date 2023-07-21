@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--Created by Ardora - www.webardora.net-->
+<!--ArdoraCartos-->
+<!--bajo licencia Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+para otros usos contacte con el autor-->
+<html lang="es">
+<head><meta charset="utf-8" /><title></title>
+<link type="text/css" href="Contar_dinero_resources/css/ardoraContaD.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="Contar_dinero_resources/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="Contar_dinero_resources/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="Contar_dinero_resources/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="Contar_dinero_resources/js/ardoraContaDCFG.js"></script>
+<script language="javascript" type="text/javascript" src="Contar_dinero_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="Contar_dinero_resources/js/ardoraContaD.js"></script>
+<script language="javascript" type="text/javascript" src="Contar_dinero_resources/js/ardoraTab.js"></script>
+</head>
+<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+<div id="ardoraMain">
+<audio id="audioFelicitacion">
+<source src="Contar_dinero_resources/media/11111.mp3" type="audio/mp3">
+</audio>
+<audio id="audioTempo">
+<source src="Contar_dinero_resources/media/piano-triste-1-.mp3" type="audio/mp3">
+</audio>
+<audio id="audioIntentos">
+<source src="Contar_dinero_resources/media/piano-triste-1-.mp3" type="audio/mp3">
+</audio>
+<div id="ardoraEnu"><SPAN style="font-size:12px;color:#000000">IDENTIFICA EL DINERO SEGÚN SU DESCRIPCIÓN</SPAN></div>
+  <div id="ardoraAct">
+<div id="actText"></div>
+<div id="score"><p> </p></div>
+<div id="scoreC"><p> </p></div><div id="scoreU"><p> </p></div>
+  <div id="drop"></div>
+<div id="origin">
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,01€" class="coin draggable cns000001" src="Contar_dinero_resources/media/ns000001.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,05€" class="coin draggable cns000005" src="Contar_dinero_resources/media/ns000005.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,10€" class="coin draggable cns000010" src="Contar_dinero_resources/media/ns000010.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,20€" class="coin draggable cns000020" src="Contar_dinero_resources/media/ns000020.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="0,50€" class="coin draggable cns000050" src="Contar_dinero_resources/media/ns000050.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="1€" class="coin draggable cns000100" src="Contar_dinero_resources/media/ns000100.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="2€" class="coin draggable cns000200" src="Contar_dinero_resources/media/ns000200.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="5€" class="coin draggable cns000500" src="Contar_dinero_resources/media/ns000500.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="10€" class="coin draggable cns001000" src="Contar_dinero_resources/media/ns001000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="20€" class="coin draggable cns002000" src="Contar_dinero_resources/media/ns002000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="50€" class="coin draggable cns005000" src="Contar_dinero_resources/media/ns005000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="100€" class="coin draggable cns010000" src="Contar_dinero_resources/media/ns010000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+<img alt="200€" class="coin draggable cns020000" src="Contar_dinero_resources/media/ns020000.gif" />
+</div>
+<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+  </div>
+<div id="ardoraTab">
+  <canvas id="ardoraTabCanvas" width="70" height="147"></canvas>
+  <div id="buttonOk"><canvas id="buttonOkCanvas" width="70" height="70"></canvas></div>
+</div></div>
+<div id="ardoraAlumSCORM"><p></p></div>
+</body></html>

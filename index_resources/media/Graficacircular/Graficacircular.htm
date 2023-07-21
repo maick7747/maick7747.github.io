@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--Created by Ardora - www.webardora.net-->
+<!--ArdoraTartas-->
+<!--bajo licencia Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+para otros usos contacte con el autor-->
+<html lang="es">
+<head><meta charset="utf-8" /><title>Gráfica circular</title>
+<!--[if lt IE 9]> <script src="ardoraFiles/js/html5shiv.js"></script> <![endif]-->
+<link type="text/css" href="ardoraFiles/css/normalize.css" rel="stylesheet" />
+<link type="text/css" href="Graficacircular_resources/css/ardoraPies.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="ardoraFiles/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="ardoraFiles/js/jquery-ui.min.js"></script>
+<script src="ardoraFiles/js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+<div id="ardoraMain">
+<div id="ardoraEnu"><SPAN style="font-size:16px; color:#000000">Con los datos colorea  la siguiente gráfica</SPAN><br>
+<span></div>
+<div id="pieTitle">Cajas de frutas del Rancho Los chapulines</div>
+<div id="ardoraAct">
+<div id="colorPanel">
+<table border="0">
+<tr><td width="25"></td><td></td>
+<td>Valor</td>
+</tr>
+<tr><td><span id="c0" class="bColor"></span></td><td><p id="p0">Mango</p></td>
+<td>40</td>
+</tr>
+<tr><td><span id="c1" class="bColor"></span></td><td><p id="p1">Plátano</p></td>
+<td>30</td>
+</tr>
+<tr><td><span id="c2" class="bColor"></span></td><td><p id="p2">Guanabana</p></td>
+<td>50</td>
+</tr>
+<tr><td><span id="c3" class="bColor"></span></td><td><p id="p3">Chayote</p></td>
+<td>10</td>
+</tr>
+<tr><td><span id="c4" class="bColor"></span></td><td><p id="p4">Mamey</p></td>
+<td>20</td>
+</tr>
+</table>
+</div>
+<canvas id="ardoraCanvasPie" width="500" height="500"></canvas>
+<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+  </div>
+<div id="ardoraTab">
+  <canvas id="ardoraTabCanvas" width="70" height="98"></canvas>
+  <div id="buttonOk"><canvas id="buttonOkCanvas" width="70" height="70"></canvas></div>
+</div></div>
+<div id="ardoraAlumSCORM"><p></p></div>
+<div id="ardoraAutor"><p>José Francisco Leyva Vásquez</p></div>
+</body>
+<script language="javascript" type="text/javascript" src="Graficacircular_resources/js/ardoraPiesCFG.js"></script>
+<script language="javascript" type="text/javascript" src="Graficacircular_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="Graficacircular_resources/js/ardoraPies.js"></script>
+<script language="javascript" type="text/javascript" src="Graficacircular_resources/js/ardoraCanvasDraw.js"></script>
+<script language="javascript" type="text/javascript" src="Graficacircular_resources/js/ardoraTab.js"></script>
+<script language="javascript" type="text/javascript" src="Graficacircular_resources/js/ardoraPosts.js"></script>
+</html>
